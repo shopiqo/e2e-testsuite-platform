@@ -20,6 +20,9 @@ require('./commands/storefront-api-commands');
 // Import fixture commands.js
 require('./commands/system-commands');
 
+// Require test suite commons
+require('@shopware-ag/e2e-testsuite-platform/cypress/support');
+
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
     // failing the test

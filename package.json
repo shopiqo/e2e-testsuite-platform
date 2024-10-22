@@ -11,7 +11,8 @@
   ],
   "contributors": [
     "klarstil",
-    "leichteckig"
+    "leichteckig",
+    "shopiqo"
   ],
   "license": "MIT",
   "dependencies": {
@@ -20,6 +21,7 @@
     "@babel/preset-env": "7.14.9",
     "@babel/register": "7.14.5",
     "@cypress/skip-test": "^2.6.1",
+    "@shopware-ag/e2e-testsuite-platform": "^8.0.1",
     "axios": "0.21.1",
     "cypress-file-upload": "^5.0.8",
     "cypress-log-to-output": "^1.1.2",
@@ -31,8 +33,11 @@
     "node": ">= 8.10.0",
     "npm": ">= 6.5.0"
   },
-  "repository": "git://github.com/shopware/e2e-testsuite-platform.git",
+  "repository": "https://github.com/shopiqo/e2e-testsuite-platform.git",
   "devDependencies": {
     "cypress": "^12.2.0"
+  },
+  "scripts": {
+    "cypress:run": "./node_modules/.bin/cypress run --runner-ui --headed --config-file=./cypress.config.js"
   }
 }
